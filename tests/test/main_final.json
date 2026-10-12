@@ -1,0 +1,32 @@
+{
+    "20": {
+        "single_batch_runtime_mean": 0.7494126081466674,
+        "single_batch_runtime_median": 0.7374035120010376,
+        "genaration_time_mean": 0.5491723367292434,
+        "genaration_time_median": 0.5544458231888711,
+        "tps_mean": 72.82690422561959,
+        "tps_median": 78.91827023673841,
+        "ttft_mean": 0.2452310303846995,
+        "ttft_median": 0.2428429126739502
+    },
+    "30": {
+        "single_batch_runtime_mean": 0.9754536231358846,
+        "single_batch_runtime_median": 0.9750381708145142,
+        "genaration_time_mean": 0.7211202543642786,
+        "genaration_time_median": 0.7082041089888662,
+        "tps_mean": 57.01121836938313,
+        "tps_median": 61.362927208451254,
+        "ttft_mean": 0.31455576075447933,
+        "ttft_median": 0.3138618469238281
+    },
+    "40": {
+        "single_batch_runtime_mean": 1.202003248532613,
+        "single_batch_runtime_median": 1.1986950635910034,
+        "genaration_time_mean": 0.9075881273113191,
+        "genaration_time_median": 0.8735940742772073,
+        "tps_mean": 46.6776335132221,
+        "tps_median": 49.93799930806597,
+        "ttft_mean": 0.3888515184322993,
+        "ttft_median": 0.3868311643600464
+    }
+}

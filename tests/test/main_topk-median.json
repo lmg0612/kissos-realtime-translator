@@ -1,0 +1,52 @@
+{
+    "1": {
+        "single_batch_runtime_mean": 0.2620340347290039,
+        "single_batch_runtime_median": 0.2580997943878174,
+        "genaration_time_mean": 0.2605004791170359,
+        "genaration_time_median": 0.2565178859513253,
+        "tps_mean": 176.49949665138735,
+        "tps_median": 178.48717900870298,
+        "ttft_mean": 0.05870070457458496,
+        "ttft_median": 0.06038999557495117
+    },
+    "10": {
+        "single_batch_runtime_mean": 0.5329988479614258,
+        "single_batch_runtime_median": 0.5250493288040161,
+        "genaration_time_mean": 0.41420330746565015,
+        "genaration_time_median": 0.41859707282856107,
+        "tps_mean": 114.13352754735392,
+        "tps_median": 117.98631174530647,
+        "ttft_mean": 0.16604841470718384,
+        "ttft_median": 0.16472899913787842
+    },
+    "20": {
+        "single_batch_runtime_mean": 0.7537399530410767,
+        "single_batch_runtime_median": 0.7465229034423828,
+        "genaration_time_mean": 0.5459471425064839,
+        "genaration_time_median": 0.5453344329725951,
+        "tps_mean": 80.99140034418316,
+        "tps_median": 85.61065457399766,
+        "ttft_mean": 0.24087829470634461,
+        "ttft_median": 0.24053120613098145
+    },
+    "30": {
+        "single_batch_runtime_mean": 0.9368759393692017,
+        "single_batch_runtime_median": 0.9402776956558228,
+        "genaration_time_mean": 0.70255061529732,
+        "genaration_time_median": 0.6790537487249821,
+        "tps_mean": 66.10037399648975,
+        "tps_median": 69.69571464840875,
+        "ttft_mean": 0.3141590666770935,
+        "ttft_median": 0.31470513343811035
+    },
+    "40": {
+        "single_batch_runtime_mean": 1.1545351982116698,
+        "single_batch_runtime_median": 1.1489019393920898,
+        "genaration_time_mean": 0.8833281508542131,
+        "genaration_time_median": 0.8376880427822471,
+        "tps_mean": 54.56097670684702,
+        "tps_median": 57.072161582633775,
+        "ttft_mean": 0.3843009811639786,
+        "ttft_median": 0.38436341285705566
+    }
+}

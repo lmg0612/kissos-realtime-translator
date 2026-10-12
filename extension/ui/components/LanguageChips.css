@@ -1,0 +1,259 @@
+.language-panel {
+  position: relative;
+  padding: 10px 15px;
+  margin: 4px;
+  box-sizing: border-box;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);;
+  border-radius: 18px;
+  background: white;
+  color: #1f1f1f;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  overflow: hidden;
+}
+
+.language-panel__header {
+  /* height: 42px; */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2px;
+
+  flex-shrink: 0;
+}
+
+.language-panel__title-wrap {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  
+}
+
+.language-panel__title {
+  margin: 0;
+  padding: 0px 4px;
+
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.language-panel__ghost {
+  position: absolute;
+  padding: 4px;
+  top: 48%;
+
+  transform: translateY(-50%);
+
+  opacity: 0.24;
+
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+
+  pointer-events: none;
+}
+
+.language-panel__search {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+
+  /* padding: 4px; */
+
+  border: none;
+  outline: none;
+  background: transparent;
+  
+
+  color: #1f1f1f;
+  caret-color: #1f1f1f;
+
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+.language-panel__search-btn {
+  width: 32px;
+  height: 32px;
+  padding-top: 3.5px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #1f1f1f;
+
+  display: grid;
+  place-items: center;
+
+  cursor: pointer;
+  opacity: 0.78;
+
+  transition:
+    opacity 160ms ease,
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.language-panel__search-btn:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.language-panel__search-btn:active {
+  transform: scale(0.90);
+}
+
+.language-page-viewport {
+  height: 94px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  /* padding-right: 6px; */
+  /* padding: 0 1px; */
+  /* direction: rtl; */
+
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.language-page-viewport::-webkit-scrollbar {
+  width: 4px;
+}
+
+.language-page-viewport::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.language-page-viewport::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.language-page-viewport::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.language-page-list {
+  display: flex;
+  flex-direction: column;
+  /* direction: ltr; */
+  /* justify-content: center; */
+  
+}
+
+.language-page {
+  height: 94px;
+
+  display: flex;
+  flex-direction: column;
+  /* gap: 8px; */
+
+  flex-shrink: 0;
+}
+
+.language-chip-row {
+  margin: 2px 0px;
+  display: flex;
+  align-items: center;
+  /* gap: 8px; */
+}
+
+.language-chip {
+  margin: 0px 2px;
+  /* height: 100%; */
+  /* width: fit-content; */
+  /* max-height: 100%; */
+  min-width: 60px;
+  padding: 5.5px 9.5px;
+  /* margin: 1%; */
+
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.64);
+  color: rgba(0, 0, 0, 0.9);
+
+  font-size: 11.4px;
+  font-weight: 500;
+  white-space: nowrap;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.02);
+
+  cursor: pointer;
+
+  transition:
+    background 140ms ease,
+    border-color 140ms ease,
+    color 140ms ease,
+    opacity 140ms ease,
+    transform 140ms ease,
+    box-shadow 140ms ease;
+}
+
+.language-chip:hover {
+  border-color: rgba(0, 0, 0, 0.6);
+  transform: translateY(-1px);
+}
+
+.language-chip--selected {
+  background: rgba(226, 226, 226, 0.216);
+  color: rgba(0, 0, 0, 1);
+  border-color: rgba(0, 0, 0, 0.8);
+  /* box-shadow: 1px 1px rgba(0, 0, 0, 0.1); */
+}
+
+.language-chip--pending {
+  opacity: 0.72;
+  transform: scale(0.97);
+}
+
+.language-panel__footer {
+  /* margin-top: auto; */
+  align-self: flex-end;
+  /* padding: -4px; */
+  /* height: 0%; */
+
+  font-size: 12px;
+  letter-spacing: -0.02em;
+
+  opacity: 0.72;
+}
+
+
+.language-panel__empty {
+  width: 100%;
+  height: 108px;
+
+  display: grid;
+  place-items: center;
+
+  font-size: 13px;
+  opacity: 0.42;
+}
+
+.language-measure {
+  position: absolute;
+  left: 18px;
+  right: 24px;
+  top: -9999px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 8px;
+
+  visibility: hidden;
+  pointer-events: none;
+}

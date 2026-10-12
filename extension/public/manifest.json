@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Malieum-Beta",
+  "version": "0.1.1",
+  "description": "Real-time voice translator for multilingual environments",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi8W7n8+9YfyzYGIKdqnNMMHVL/nuZBdBTica4zpmtw0amTOPJoMNGyYL44xoGN0CeIWJCPo7pQY7NOmrqfFxf3JWX6Nbt8MHrw3PqXqPyuJ/BBkAX8+N4rcmL0RvAG+VsH2nB3EZsS08uDJaqiKxB1JKULZMjprKpzIax0mpbDiDag+FwHKO5jrK7wuEuK0ZWI0FQ0N5hXrZFqfx10I0HoQ7AuNisWk93VSaeavB/DrqUk6w+ANZ6+dXdlHtpOtOv59VT7tdi7DW4iUulzIDATEqcGkp5eB4oPF7Fi+7HH8dsHtShvNE/M804zIynF7W9vyjq1s6yHwjjcNQZFyS6QIDAQAB",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "offscreen",
+    "storage",
+    "identity"
+  ],
+  "host_permissions": [
+    "http://<SERVER_HOST>/*",
+    "ws://<SERVER_HOST>/*"
+  ],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "src/background/index.js",
+    "type": "module"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "lib/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
